@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        background-color: #F8F9FC;
+    }
+}
+
+@layer components {
+    .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5px 15px;
+    }
+
+    .cart-count {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        color: white;
+        right: -10px;
+        bottom: -10px;
+        background-color: red;
+        border-radius: 50%;
+        font-size: 14px;
+    }
+
+    .footer-shadow {
+        -webkit-box-shadow: 1px -2px 5px 0 rgba(0, 0, 0, 0.10);
+        -moz-box-shadow: 1px -2px 5px 0 rgba(0, 0, 0, 0.10);
+        box-shadow: 1px -2px 5px 0 rgba(0, 0, 0, 0.10);
+    }
+
+    .item-button {
+        @apply bg-sky-600 text-white px-2 py-1 rounded-sm hover:opacity-70
+    }
+
+    .cartModal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        background: rgba(0, 0, 0, 0.35);
+    }
+
+    .cartModal.active {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .cartModalContent {
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+    }
+}
