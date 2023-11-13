@@ -1,5 +1,6 @@
 # TypeScript React Shopping Cart
 The Shopping Cart app is a web application built with Tailwind CSS, React, and the Context API.
+
 https://ts-shopping-cart-eight.vercel.app
 
 # App Preview
